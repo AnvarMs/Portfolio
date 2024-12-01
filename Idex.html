@@ -3,68 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Three.js Sample Scene</title>
-    <style>
-        body {
-            margin: 0;
-            overflow: hidden;
-        }
-        canvas {
-            display: block;
-        }
-    </style>
+    <title>Anvar MS</title>
+    <link rel="stylesheet" href="CSS/styl.css"> 
 </head>
 <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script>
-    // Initialize the scene, camera, and renderer
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(
-        75, window.innerWidth / window.innerHeight, 0.1, 1000
-    );
-    const renderer = new THREE.WebGLRenderer();
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    document.body.appendChild(renderer.domElement);
+    <script src="https://cdn.jsdelivr.net/npm/three@latest/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="JS/main.js"></script>
 
-    // Add a rotating cube
-    const geometry = new THREE.BoxGeometry();
-    const material = new THREE.MeshStandardMaterial({ color: 0x0077ff });
-    const cube = new THREE.Mesh(geometry, material);
-    scene.add(cube);
-
-    // Add lighting
-    const light = new THREE.PointLight(0xffffff, 1, 100);
-    light.position.set(10, 10, 10);
-    scene.add(light);
-
-    // Position the camera
-    camera.position.z = 5;
-
-    window.addEventListener('resize',()=>{
-  renderer.setSize(window.innerWidth,window.innerHeight);
-  camera.aspect = window.innerWidth/ window.innerHeight;
-  camera.updateProjectionMatrix();
-    })
-
-    // Render loop
-    function animate() {
-        requestAnimationFrame(animate);
-
-        // Rotate the cube
-        cube.rotation.x += 0.01;
-        cube.rotation.y += 0.01;
-
-        renderer.render(scene, camera);
-    }
-    // Handle window resize
-    window.addEventListener('resize', () => {
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        camera.aspect = window.innerWidth / window.innerHeight;
-        camera.updateProjectionMatrix();
-    });
-
-    animate();
-</script>
+    <Canvas    id="canvas1" class="mainCanvas"></Canvas>
+    <div id="overlay-text">Hello, Three.js!</div>
 
     
 </body>

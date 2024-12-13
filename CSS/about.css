@@ -1,0 +1,123 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Monospace;
+    background-color: transparent;
+    color: #fff;
+    overflow-x: hidden; /* No vertical scrollbar */
+    overflow-y: auto; /* Enable vertical scroll if needed */
+}
+
+/* Container for about page */
+.about-container {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+}
+
+/* About Section */
+.about-info {
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 8px;
+   
+}
+
+/* Experience Section */
+.experience {
+    margin: 50px 0;
+    padding: 20px;
+    border-radius: 8px;
+   
+}
+
+.experience h2 {
+    font-size: 1.5rem;
+}
+
+.experience-item {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Skills Section */
+.skills {
+    margin: 50px 0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.skills h2 {
+    font-size: 1.5rem;
+}
+
+.skills ul {
+    list-style-type: none;
+}
+
+.skills li {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+/* Practice Works Section */
+.practice-works {
+    margin: 50px 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px #F02050;
+}
+
+.practice-works h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Horizontal Scroll for Practice Works */
+.practice-works {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.practice-works::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+}
+.practice-works video{
+
+    margin: 20px;
+}
+.practice-works iframe {
+    width: 320px;
+    height: 180px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px #F02050;
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .practice-works iframe {
+        width: 260px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .practice-works iframe {
+        width: 200px;
+        height: 112px;
+    }
+}

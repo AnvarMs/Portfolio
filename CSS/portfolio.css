@@ -1,0 +1,116 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            font-family:monospace;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #00000000; /* Dark background */
+            color: #fff;
+            overflow-x: hidden; /* Prevent vertical scrolling */
+        }
+
+        header {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0); /* Dark purple with transparency */
+            color: #fff;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        /* Projects container - enable horizontal scroll */
+        .projects {
+            display: flex;
+            flex-wrap: wrap; /* Prevent wrapping, making items in a single row */
+            justify-content: center;
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            margin-top: 20px;
+            overflow-y: auto; /* Enable horizontal scroll if needed */
+            scroll-snap-type: x mandatory; /* Smooth scrolling */
+            -webkit-overflow-scrolling: touch; /* Better scrolling on iOS devices */
+
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        }
+
+        /* Project card styling */
+        .project {
+            background-color: rgba(0, 0, 0, 0.7); /* Transparent dark purple */
+            margin: 10px;
+            padding: 20px;
+            width: calc(33% - 40px); /* Adjust width for 3 columns */
+            box-shadow:0 4px 8px #F02050;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            flex-shrink: 0; /* Prevent shrinking */
+            scroll-snap-align: start; /* Snap to the start of each project */
+        }
+
+        /* Ensure projects scale and are scrollable */
+        .project:hover {
+            transform: scale(1.05);
+        }
+
+        /* Style for the project images and text */
+        .project img {
+            max-width: 100%;
+            max-height: 50%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .project h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        /* Transparent button with white outline */
+        .project a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            display: block;
+        }
+
+        .project a:hover {
+            background-color: rgba(255, 255, 255, 0);
+            color: #F02050;
+            border-color: #007bff00;
+        }
+
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            .project {
+                width: calc(50% - 40px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .project {
+                width: calc(100% - 40px);
+            }
+        }

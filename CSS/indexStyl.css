@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: monospace;
+  overflow: hidden;
+  background: transparent;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  /* Above Three.js canvas */
+  color: white;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0);
+  backdrop-filter: blur(1px);
+  /* Add a slight blur for a glass effect */
+}
+
+.content {
+  background-color: rgba(0, 0, 0, 0.336);
+  /* Transparent black */
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 80%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.button {
+  margin-top: 20px;
+}
+
+.button a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #fff;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  display: contents;
+}
+
+.button a:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: #F02050;
+  border-color: #007bff00;
+}

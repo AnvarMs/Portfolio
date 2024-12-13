@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: monospace;
   overflow: hidden;
-  background: transparent;
+  background: rgba(0, 0, 0, 0.733);
 }
 
 .overlay {
@@ -24,7 +24,7 @@ body {
 }
 
 .content {
-  background-color: rgba(0, 0, 0, 0.336);
+  background-color:transparent;
   /* Transparent black */
   padding: 20px;
   border-radius: 15px;

@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: monospace;
+    background: #000000de;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.contact-container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #F02050;
+    width: 90%;
+    max-width: 600px;
+}
+.contact-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #F02050;
+}
+.contact-container p {
+    margin-bottom: 10px;
+}
+.form-group {
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background: transparent;
+    color: #fff;
+    outline: none;
+}
+.form-group input::placeholder, .form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+.form-group textarea {
+    resize: none;
+    height: 100px;
+}
+.contact-container .submit-btn {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.contact-container .submit-btn:hover {
+    background: #F02050;
+    color: #000;
+}
+.contact-info {
+    margin-top: 20px;
+}
+.contact-info p {
+    margin: 5px 0;
+}
+.contact-info a {
+    color: #F02050;
+    text-decoration: none;
+}
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #F02050;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.social-container {
+    margin: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    font-size: 2.5rem;
+    color: #fff;
+    transition: transform 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    color: #F02050;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .social-container {
+        flex-wrap: wrap;
+    }
+
+    .social-icon {
+        font-size: 2rem;
+    }
+}

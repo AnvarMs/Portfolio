@@ -11,7 +11,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color: #00000000; /* Dark background */
+            background-color: #000000c4; /* Dark background */
             color: #fff;
             overflow-x: hidden; /* Prevent vertical scrolling */
         }

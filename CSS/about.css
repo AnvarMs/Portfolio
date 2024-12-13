@@ -8,8 +8,8 @@
 body, html {
     height: 100%;
     font-family: Monospace;
-    background-color: transparent;
-    color: #fff;
+    background-color: rgba(0, 0, 0, 0.801);
+    color: #ffffff;
     overflow-x: hidden; /* No vertical scrollbar */
     overflow-y: auto; /* Enable vertical scroll if needed */
 }

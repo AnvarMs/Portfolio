@@ -8,11 +8,70 @@
 body, html {
     height: 100%;
     font-family: Monospace;
-    background-color: rgba(0, 0, 0, 0.801);
+    background-color: rgba(0, 0, 0, 0.308);
     color: #ffffff;
     overflow-x: hidden; /* No vertical scrollbar */
     overflow-y: auto; /* Enable vertical scroll if needed */
 }
+/* Container for scroll icon */
+.scroll-icon-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    animation: fade-in 2s ease-in-out infinite;
+  }
+  
+  
+  /* Scroll icon styling */
+  .scroll-icon {
+    width: 30px;
+    height: 50px;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    position: relative;
+  }
+  
+  /* The dot inside the scroll icon */
+  .scroll-dot {
+    width: 6px;
+    height: 6px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: scroll 1.5s ease-in-out infinite;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fade-in {
+    0%, 100% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  /* Scroll animation */
+  @keyframes scroll {
+    0% {
+      top: 5px;
+      opacity: 0.8;
+    }
+    50% {
+      top: 25px;
+      opacity: 0.4;
+    }
+    100% {
+      top: 5px;
+      opacity: 0.8;
+    }
+  }
+  
 
 /* Container for about page */
 .about-container {

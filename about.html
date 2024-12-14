@@ -10,24 +10,37 @@
 </head>
 
 <body>
+    <div class="scroll-icon-container">
+        <div class="scroll-icon">
+            <div class="scroll-dot"></div>
+        </div>
+    </div>
+
 
     <div class="about-container">
         <!-- About Section -->
         <div class="about-info">
             <h1>About Me</h1>
             <p>
-                Hello! I'm Anvar Ms, a passionate game developer focused on creating innovative gaming experiences by<br>
-                blending creativity with advanced programming skills. I've worked on a range of projects, including car<br>
-                simulators, endless runner games, and parkour challenges, all of which you can explore in my portfolio.<br>
+                Hello! I'm Anvar Ms, a passionate game developer focused on creating innovative gaming experiences
+                by<br>
+                blending creativity with advanced programming skills. I've worked on a range of projects, including
+                car<br>
+                simulators, endless runner games, and parkour challenges, all of which you can explore in my
+                portfolio.<br>
                 I believe in continuous learning to craft engaging and challenging gameplay.<br><br>
 
-                Currently, I am building my portfolio in 3.js, exploring the potential of interactive web-based games.<br>
-                My curiosity drives me to experiment with new technologies, and I am particularly interested in diving<br>
-                into AI and machine learning. My mission is to leverage these technologies to develop intelligent NPCs<br>
+                Currently, I am building my portfolio in 3.js, exploring the potential of interactive web-based
+                games.<br>
+                My curiosity drives me to experiment with new technologies, and I am particularly interested in
+                diving<br>
+                into AI and machine learning. My mission is to leverage these technologies to develop intelligent
+                NPCs<br>
                 and enemies, enriching the player experience with dynamic and challenging AI bots. Through these<br>
                 advancements, I aim to create dopamine-driven experiences that keep players engaged. Additionally, I<br>
                 have experience in developing Augmented Reality (AR) games, utilizing frameworks like Unity and<br>
-                ARKit/ARCore to blend virtual and real worlds in immersive, interactive ways. My dream is to work on a<br>
+                ARKit/ARCore to blend virtual and real worlds in immersive, interactive ways. My dream is to work on
+                a<br>
                 blockchain project in the future, integrating cutting-edge technology into the gaming world.<br>
 
 
@@ -134,13 +147,25 @@
             </div>
 
             <div class="video"><iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/2A6_NthSo-s?si=RfS9CJ9NiZt4PA1l" title="YouTube video player"
+                    src="https://www.youtube.com/embed/2A6_NthSo-s?si=8ZKWwvvPkXsuDtvH" title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FMFe0SCtDw8?si=oTcdeD8JblZCVq8k"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </div>
 
-
+        <script>
+            document.querySelector('.scroll-icon-container').addEventListener('click', () => {
+                document.querySelector('#about-section').scrollIntoView({ behavior: 'smooth' });
+            });
+        </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
         <script src="JS/main.js"></script>
 </body>

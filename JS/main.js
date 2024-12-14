@@ -32,7 +32,7 @@ var smoke = new THREE.Object3D();
 var town = new THREE.Object3D();
 
 var createCarPos = true;
-var uSpeed = 0.001;
+var uSpeed = 0.0005;
 
 //----------------------------------------------------------------- FOG background
 var setcolor = 0xF02050;
@@ -185,7 +185,7 @@ function animate() {
     const deltaX = (-(mouse.y * 2) - camera.rotation.x) * uSpeed;
   
     // Clamp the rotation deltas to a maximum speed
-    const maxRotationSpeed = 0.02; // Adjust this value for smoothness
+    const maxRotationSpeed = 0.015; // Adjust this value for smoothness
     const clampedDeltaY = THREE.MathUtils.clamp(deltaY, -maxRotationSpeed, maxRotationSpeed);
     const clampedDeltaX = THREE.MathUtils.clamp(deltaX, -maxRotationSpeed, maxRotationSpeed);
   

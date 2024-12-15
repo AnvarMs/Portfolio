@@ -15,7 +15,6 @@
 
 body, html {
     height: 100%;
-    font-family: Monospace;
     background-color: rgba(0, 0, 0, 0.308);
     color: #ffffff;
     overflow-x: hidden; /* No vertical scrollbar */
@@ -89,13 +88,18 @@ body, html {
     background-color: transparent;
     color: #fff;
 }
-
+.about-container h2{
+  color: rgb(240, 32, 80);
+}
 /* About Section */
 .about-info {
     margin-bottom: 50px;
     padding: 20px;
     border-radius: 8px;
    
+}
+.about-info h1{
+ color:  rgb(240, 32, 80);
 }
 
 /* Experience Section */
@@ -108,6 +112,7 @@ body, html {
 
 .experience h2 {
     font-size: 1.5rem;
+    color: #F02050;
 }
 
 .experience-item {
@@ -124,6 +129,7 @@ body, html {
 
 .skills h2 {
     font-size: 1.5rem;
+    color: #F02050;
 }
 
 .skills ul {

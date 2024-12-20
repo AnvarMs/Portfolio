@@ -54,6 +54,7 @@ p {
   display: inline-block;
   margin: 10px 0;
   text-align: center;
+
 }
 
 .button a {
@@ -68,20 +69,24 @@ p {
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
+
 }
 
 .button a:hover {
   background-color: rgba(255, 255, 255, 0.2); /* Slightly lighter on hover */
   color: #F02050;
   transform: scale(1.05); /* Slight scale effect on hover */
+
 }
 
 .button i {
   font-size: 1.5rem;
   margin-right: 10px;
   transition: color 0.3s ease; /* Smooth color change */
+
 }
 
 .button a:hover i {
   color: #F02050; /* Change icon color on hover */
+  
 }

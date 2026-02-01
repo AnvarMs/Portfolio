@@ -89,7 +89,8 @@ body, html {
     color: #fff;
 }
 .about-container h2{
-  color: rgb(240, 32, 80);
+  margin-top: 100px;
+  color: hwb(346 13% 6%);
 }
 /* About Section */
 .about-info {
@@ -102,60 +103,66 @@ body, html {
  color:  rgb(240, 32, 80);
 }
 
-/* Experience Section */
-.experience {
-    margin: 50px 0;
-    padding: 20px;
-    border-radius: 8px;
-   
-}
 
-.experience h2 {
-    font-size: 1.5rem;
-    color: #F02050;
-}
-
-.experience-item {
-    font-size: 1.2rem;
-    margin: 10px 0;
-}
-
-/* Skills Section */
-.skills {
-    margin: 50px 0;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.skills h2 {
-    font-size: 1.5rem;
-    color: #F02050;
-}
-
-.skills ul {
-    list-style-type: none;
-}
-
-.skills li {
-    font-size: 1.2rem;
-    margin: 5px 0;
-}
 
 /* General styling for Practice Works */
 .practice-works {
-  margin: 50px 0;
+  margin: 50px;
   padding: 20px;
   display: flex;
   flex-direction: column; /* Set vertical layout */
   align-items: center; /* Center content horizontally */
-  gap: 50px; /* Space between video items */
+  gap: 100px; /* Space between video items */
   max-height: auto; /* Set maximum height */
   overflow-y: auto; /* Enable vertical scrolling */
   scroll-snap-type: y mandatory;
 }
+.play-btn {
+
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  background: rgba(240, 32, 80, 0.95);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.play-btn i {
+  color: white;
+  font-size: 22px;
+  margin-left: 3px; /* optical centering */
+}
+
+.yt-card:hover .play-btn {
+  transform: translate(-50%, -50%) scale(1.1);
+  box-shadow: 0 0 25px rgba(240, 32, 80, 0.8);
+}
+
+.practice-caption {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.practice-caption h4 {
+  color: #F02050;
+  margin-bottom: 5px;
+}
+
+.practice-caption p {
+  opacity: 0.85;
+  line-height: 1.3;
+}
+
 
 /* Styling for video items */
 .practice-works iframe {
+  margin-top: 50px;
   width: 480px;
   height: 280px;
   border: none;

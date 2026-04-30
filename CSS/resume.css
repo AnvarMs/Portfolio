@@ -1,78 +1,137 @@
-/* Basic Styles */
 @import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
 
-.underdog-regular {
-    font-family: "Underdog", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-body {
-    font-family: serif,sans-serif;
-    background-color: #000;
-    color: #fff;
+* {
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: "Underdog", system-ui;
+    background: transparent;
+    color: #eee;
+    min-height: 100vh;
+    padding-bottom: 40px;
+}
+
+/* Header */
 header {
     text-align: center;
-    padding: 20px 0;
+    padding: 50px 20px 30px;
+    width: 100%;
 }
 
 header h1 {
-    font-size: 2.5rem;
-    color: #F02050;
-    text-shadow: 2px 2px 10px rgba(240, 32, 80, 0.7);
+    font-size: 3rem;
+    color: #ffffff;
+    text-shadow: 0 0 15px #F02050;
+    margin-bottom: 15px;
 }
 
-section {
-    width: 80%;
-    max-width: 800px;
-    margin: 20px 0;
+.download-btn {
+    display: inline-block;
+    padding: 14px 32px;
+    background: transparent;
+    color: white;
+    border: 2px solid #F02050;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    background: #F02050;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Main Resume Container */
+.resume-container {
+    max-width: 950px;
+    margin: 40px auto;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
-    box-shadow: 0 0 10px #F02050;
 }
 
-h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+/* Sections with Transparent Background */
+section {
+    background: rgba(10, 10, 20, 0.253);     /* Semi-transparent dark */
+    backdrop-filter: blur(8px);              /* Nice glass effect */
+    padding: 28px;
+    margin-bottom: 35px;
+    border-radius: 12px;
+    border: 1px solid rgba(240, 32, 80, 0.3);
+    box-shadow: 0 8px 25px rgba(240, 32, 80, 0.15);
+}
+
+h2, h3, h4 {
     color: #F02050;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+h2 { 
+    font-size: 2.2rem; 
+    margin-bottom: 18px; 
+    text-shadow: 0 0 8px rgba(240, 32, 80, 0.5);
 }
 
-ul li {
-    margin-bottom: 10px;
+h3 { 
+    font-size: 1.55rem; 
+    margin-bottom: 16px; 
 }
 
-ul li:before {
-   
-    margin-right: 5px;
-    color: #F02050;
+h4 { 
+    color: #fff; 
+    margin-bottom: 8px; 
 }
 
+.date {
+    color: #ff80a0;
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+/* Project Items */
+.project-item {
+    margin-bottom: 22px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid rgba(240, 32, 80, 0.2);
+}
+
+.project-item:last-child {
+    border-bottom: none;
+}
+
+/* Links */
 a {
-    color: #F02050;
+    color: #ff80a0;
     text-decoration: none;
 }
 
 a:hover {
+    color: #F02050;
     text-decoration: underline;
 }
 
-footer {
-    text-align: center;
-    margin: 20px 0;
-    font-size: 0.9rem;
-    color: #888;
+/* Responsive */
+@media (max-width: 768px) {
+    .skills-grid { 
+        grid-template-columns: 1fr; 
+    }
+    
+    header h1 { 
+        font-size: 2.4rem; 
+    }
+    
+    section {
+        padding: 20px;
+        margin-bottom: 25px;
+    }
 }

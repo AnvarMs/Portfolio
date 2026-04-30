@@ -100,7 +100,9 @@ body, html {
    
 }
 .about-info h1{
- color:  rgb(240, 32, 80);
+   font-size: 3rem;
+    color: #ffffff;
+    text-shadow: 0 0 15px #F02050;
 }
 
 

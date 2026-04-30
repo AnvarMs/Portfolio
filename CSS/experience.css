@@ -23,13 +23,12 @@ body, html {
 header {
     padding: 40px 20px 30px;
     text-align: center;
-    background: rgba(0, 0, 0, 0.85);
     width: 100%;
 }
 
 header h1 {
     font-size: 3rem;
-    color: #F02050;
+    color: #ffffff;
     text-shadow: 0 0 15px #F02050;
 }
 
@@ -49,7 +48,6 @@ header h1 {
 }
 
 .company-header {
-    background: linear-gradient(90deg, #1f000a70, #2a000a70);
     padding: 25px 30px;
     border-radius: 12px 12px 0 0;
     border: 2px solid #ffffff;

@@ -28,7 +28,9 @@ body {
 .contact-container h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #F02050;
+      font-size: 3rem;
+    color: #ffffff;
+    text-shadow: 0 0 15px #F02050;
 }
 .contact-container p {
     margin-bottom: 10px;

@@ -110,7 +110,39 @@
             color: rgb(240, 32, 80);
             border-color: #007bff00;
         }
+        /* Platform icons */
+.platforms {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 12px 0 18px;
+}
 
+.platform {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(240, 32, 80, 0.15);
+  border: 1px solid rgba(240, 32, 80, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F02050;
+  font-size: 16px;
+  transition: all 0.25s ease;
+  cursor: default;
+}
+
+.platform:hover {
+  background: rgba(240, 32, 80, 0.35);
+  transform: scale(1.12);
+  box-shadow: 0 0 12px rgba(240, 32, 80, 0.5);
+}
+
+/* Slightly improve the button spacing */
+.project a {
+  margin-top: 4px;
+}
         /* Responsive styling */
         @media (max-width: 768px) {
             .project {
